@@ -1,22 +1,13 @@
-div {
-    height: 100px;
-    width: 100px;
-    background-color: black;
-    margin: 5px;
-    
-}
-
-.rows,
-.columns {
-    height: 100px;
-    width: 100px;
-    margin: 5px;
-}
 
 .rows {
     background-color: red;
+    display: flex;
+    width: 100%;
 }
 
 .columns {
     background-color: orange;
+    flex-grow: 1;
+    aspect-ratio: 1/1;
+    margin: 5px;
 }

@@ -14,4 +14,4 @@ function createDivs(size) {
     }
 }
 
-createDivs(8);
+createDivs(10);
