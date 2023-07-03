@@ -31,6 +31,9 @@ resetButton.onclick = function () {
         document.body.removeChild(row);
     });
     let sizeField = prompt("Test");
+    while (sizeField > 100 || sizeField < 0) {
+        sizeField = prompt("Try Again!")
+    } 
     createDivs(sizeField);
 }
 
