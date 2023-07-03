@@ -9,5 +9,8 @@
     background-color: orange;
     flex-grow: 1;
     aspect-ratio: 1/1;
-    margin: 5px;
+}
+
+.columns:hover {
+    background-color: blue;
 }

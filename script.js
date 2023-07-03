@@ -1,4 +1,8 @@
 
+let resetButton = document.createElement("button");
+resetButton.textContent = "Reset!";
+document.body.appendChild(resetButton);
+
 
 
 function createDivs(size) {
@@ -12,6 +16,23 @@ function createDivs(size) {
             rowDivs.appendChild(columnDivs);
         }
     }
+    let columns = document.querySelectorAll(".columns");
+
+    columns.forEach(function(column) {
+    column.addEventListener('mouseover', function() {
+    this.style.backgroundColor = 'blue';
+    });
+});
 }
 
-createDivs(10);
+resetButton.onclick = function () {
+    let rows = document.querySelectorAll(".rows")
+    rows.forEach(function(row) {
+        document.body.removeChild(row);
+    });
+    let sizeField = prompt("Test");
+    createDivs(sizeField);
+}
+
+
+
