@@ -5,3 +5,18 @@ div {
     margin: 5px;
     
 }
+
+.rows,
+.columns {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}
+
+.rows {
+    background-color: red;
+}
+
+.columns {
+    background-color: orange;
+}
